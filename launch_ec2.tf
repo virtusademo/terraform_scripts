@@ -11,7 +11,7 @@ resource "aws_instance" "goserver" {
   vpc_security_group_ids = ["sg-f7238290"]
   key_name = "my_key"
   tags {
-        Name = "go_server_DEMO"
+        Name = "DEMO_Go_Server"
         }
   subnet_id = "subnet-8abf4fe2"
   user_data = "${file("userdata_goserver.sh")}"
@@ -23,7 +23,7 @@ resource "aws_instance" "kubews" {
   vpc_security_group_ids = ["sg-f7238290"]
   key_name = "my_key"
   tags {
-        Name = "go_agent_kubernetes_DEMO"
+        Name = "DEMO_Go_Agent_Kubernetes"
         }
   subnet_id = "subnet-8abf4fe2"
   root_block_device {
