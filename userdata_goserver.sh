@@ -17,7 +17,7 @@ sudo yum install -y go-server
 sudo yum install -y git
 sudo su
 echo "export GO_SERVER_SYSTEM_PROPERTIES='-Dgo.plugin.upload.enabled=true'" >> /etc/default/go-server
-git clone https://github.com/ernstyung/gocd_plugins.git
+git clone https://github.com/virtusademo/gocd_plugins.git
 cp /gocd_plugins/gocd-docker-pipeline-plugin-1.0.0.jar /var/lib/go-server/plugins/external/
 cp /gocd_plugins/script-executor-0.3.0.jar /var/lib/go-server/plugins/external/
 sudo /etc/init.d/go-server restart
